@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thyroid Cancer Recurrence Prediction</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Thyroid Cancer Recurrence Prediction</h1>
+        <form method="POST" action="/">
+            <div class="mb-3">
+                <label for="Age" class="form-label">Age:</label>
+                <input type="number" id="Age" name="Age" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="Gender" class="form-label">Gender:</label>
+                <select id="Gender" name="Gender" class="form-select" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="0">Male</option>
+                    <option value="1">Female</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="Hx Radiothreapy" class="form-label">Hx Radiothreapy:</label>
+                <select id="Hx Radiothreapy" name="Hx Radiothreapy" class="form-select" required>
+                    <option value="" disabled selected>Select History of Radiotherapy</option>
+                    <option value="0">No</option>
+                    <option value="1"> Yes</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="Adenopathy" class="form-label">Adenopathy:</label>
+                <select id="Adenopathy" name="Adenopathy" class="form-select" required>
+                    <option value="" disabled selected>Select Adenopathy</option>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="Pathology" class="form-label">Pathology:</label>
+                <select id="Pathology" name="Pathology" class="form-select" required>
+                    <option value="" disabled selected>Select Pathology Type</option>
+                    <option value="0">Papillary</option>
+                    <option value="1">Micropapillary</option>
+                    <option value="2">Follicular</option>
+                    <option value="3">Hurthel cell</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="Focality" class="form-label">Focality:</label>
+                <select id="Focality" name="Focality" class="form-select" required>
+                    <option value="" disabled selected>Select Focality</option>
+                    <option value="0">Unifocal</option>
+                    <option value="1">Multifocal</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="Risk" class="form-label">Risk:</label>
+                <select id="Risk" name="Risk" class="form-select" required>
+                    <option value="" disabled selected>Select Risk Level</option>
+                    <option value="0">Low</option>
+                    <option value="1">High</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="T" class="form-label">T Stage:</label>
+                <select id="T" name="T" class="form-select" required>
+                    <option value="" disabled selected>Select T Stage</option>
+                    <option value="0">T1</option>
+                    <option value="1">T2</option>
+                    <option value="2">T3</option>
+                    <option value="3">T4</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="N" class="form-label">N Stage:</label>
+                <select id="N" name="N" class="form-select" required>
+                    <option value="" disabled selected>Select N Stage</option>
+                    <option value="0">N0</option>
+                    <option value="1">N1</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="M" class="form-label">M Stage:</label>
+                <select id="M" name="M" class="form-select" required>
+                    <option value="" disabled selected>Select M Stage</option>
+                    <option value="0">M0</option>
+                    <option value="1">M1</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="Stage" class="form-label">Stage:</label>
+                <select id="Stage" name="Stage" class="form-select" required>
+                    <option value="" disabled selected>Select Stage</option>
+                    <option value="0">I</option>
+                    <option value="1">II</option>
+                    <option value="2">III</option>
+                    <option value="3">IV</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="Response" class="form-label">Response:</label>
+                <select id="Response" name="Response" class="form-select" required>
+                    <option value="" disabled selected>Select Response</option>
+                    <option value="0">Excellent</option>
+                    <option value="1">Structural Incomplete</option>
+                    <option value="2">Indeterminate</option>
+                    <option value="3">Biochemical Incomplete</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Predict</button>
+        </form>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
